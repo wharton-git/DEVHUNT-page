@@ -1,0 +1,187 @@
+@font-face {
+    font-family: circuit;
+    src: url('../FONT/Printedcircuit-Vz1w.ttf');
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: linear-gradient(45deg, #8500ff, #5acaff);
+    height: 100vh;
+
+}
+
+/* izay action rehetra dia manao effet anle + key iny */
+.action{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.action h5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a13DEA;
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+}
+.action:hover h5{
+    transform: rotate(135deg);
+}
+.action ul {
+    position: absolute;
+    bottom: 55px;
+    background: #fff;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+}
+.action:hover ul {
+    bottom: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.action ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    transition: 0.3s;
+
+
+}
+
+.action ul li:hover{
+    font-weight: 600;
+
+
+}
+.action ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+.action ul li img {
+    margin-right: 10px;
+    opacity: 0.2;
+    transform: scale(0.8);    
+}
+.action ul li:hover img{
+
+    opacity: 0.8;
+
+}
+#container  {
+    position: absolute;
+    /*                                                                          
+    border-radius: 10px;  */
+    
+    /* **********mameno ecran******** */
+    width: 100%;
+    height: 100%;
+    /* **************************** */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+#container .content{
+    max-width: 600px;
+    text-align: center;
+}
+#container .content > #title {
+    font-size: 6em;
+    color: #fff;
+    line-height: 1em;
+    font-family: circuit;
+
+}
+#container .content h4{
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #111;
+
+}
+#container .content p{
+    color: #fff;
+    font-size: 1.2em;
+
+}
+#container .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px ;
+    background: #5d1924;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    /* margin-top: 5px; */
+    overflow: hidden;
+    border-radius: 25px;
+    border-bottom: 4px solid #a86149;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+#container >.content:hover > a{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}

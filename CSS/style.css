@@ -1,0 +1,456 @@
+@font-face {
+    font-family: century;
+    src: url('../FONT/GOTHIC.TTF');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    background: url(../Images/ENI.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    width: 100%;
+    background-size: cover;
+    padding-top: 90px;
+
+}
+
+#opac {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#header-title,#header-accro{
+    /* margin-right: 40%; */
+    margin-left: 10%;
+    width: 70%;
+    color: white;
+    padding: 5%;
+}
+
+section {
+    border-top: 3px #5d1924 solid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Navigation bar */
+
+#nav{
+    display: flex;
+    position: fixed;
+    background: white;
+    border-bottom: 3px solid #5d1924;
+    width: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#nav > div {
+    flex: 1;
+}
+
+
+#logo-img {
+    width: 150px;
+}
+
+
+#menu {
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    margin-right: 4%;
+    display: flex;
+}
+
+#menu > a {
+    flex: 2;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+#menu > a:hover {
+    color: brown;
+    text-decoration: underline;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#menu > a > img {
+    width: 16px;
+    transform: translate(35px , -25px);
+    -webkit-transform: translate(35px , -25px);
+    -moz-transform: translate(35px , -25px);
+    -ms-transform: translate(35px , -25px);
+    -o-transform: translate(35px , -25px);
+}
+
+.presentation{
+    margin-bottom: 30px;
+}
+
+
+
+/* Activité AEENI */
+
+
+#activity-case {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width: 100%;
+    color: white;
+    border-top: #5d1924 3px solid;
+    margin-bottom: 30px;
+}
+
+
+#activity-case > :nth-child(1), #activity-case >:nth-child(3), #activity-case >:nth-child(5){
+    background: #a86149;
+}
+
+#activity-case > :nth-child(2), #activity-case >:nth-child(4), #activity-case >:nth-child(6){
+    background: #5d1924;
+}
+
+
+#activity-case > :nth-child(1) > .activity-title, #activity-case >:nth-child(3) > .activity-title, #activity-case >:nth-child(5) > .activity-title{
+    border-bottom:2px solid #5d1924;
+}
+
+#activity-case > :nth-child(2) > .activity-title, #activity-case >:nth-child(4) > .activity-title, #activity-case >:nth-child(6) > .activity-title{
+    border-bottom:2px solid #a86149;
+}
+
+
+#activity-case > .activity-category {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.activity-ex-img {
+    width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#activity-example{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 30px;
+}
+
+#activity-example > div > p {
+    margin-top: 15%;
+}
+
+/* Animation Activité AEENI */
+.activity-category{
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+#activity-case > :nth-child(1):hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#activity-case >:nth-child(2):hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#activity-case > :nth-child(3):hover{ 
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#activity-case >:nth-child(4):hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#activity-case > :nth-child(5):hover{ 
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+#activity-case >:nth-child(6):hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* Organisme */
+#organe-intro{
+    margin: 50px;
+    text-decoration: underline;
+}
+#organe-intro::before{
+    content: '>> ';
+}
+
+#membre {
+    border-top: #5d1924 3px solid;
+}
+
+#organe > img {
+    width: 100%;
+}
+
+
+#staff{
+    font-size: 12px;
+    margin: 30px;
+}
+
+#staff > #vice-president{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#staff > div > span > img {
+    width: 170px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border: #5d1924 3px solid;
+}
+
+.staff-name{
+    width: 150px;
+    padding: 14px;
+    background: #a86149;
+    color: white;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.staff-class{
+    padding: 14px;
+    width: 150px;
+    background: #5d1924;
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: -10px;
+}
+
+
+
+/* CLUB ENI */
+#club-img{
+    border-top: #5d1924 3px solid;
+    display: flex;
+}
+#club-img > .club-img-part{
+    flex: 1;
+    width: 20px;
+    margin: 30px;
+}
+
+
+#clubENI {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.club {
+    flex: 1;
+}
+
+/* partenaire */
+
+.partenaire {
+    border-top: #5d1924 3px solid;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.partenaire > img {
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+/* footer ---- contact */
+
+footer{
+    background: linear-gradient(gray rgb(32, 28, 28));
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+footer div ul li {
+    list-style: none;
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+footer div ul li:hover{
+    border-bottom:1px solid black ;
+}
+footer div ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+footer div ul li img{
+    margin-right: 10px;
+    opacity: 0.2;
+    transform: scale(0.8);
+}
+footer div ul li:hover img{
+    opacity: 0.8;
+}
+
+/* Media query */
+
+@media (max-width : 538px){
+    #header {
+        background-attachment: scroll;
+        font-size: 30px;
+        }
+
+    #header-title,#header-accro{
+        margin-right: 20%;
+        margin-left: 5%;
+        }
+
+
+}
+
+@media (max-width: 780px){
+    #logo {
+        margin-right: -45%;
+    }
+    #nav {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    body{
+        font-size: 13px;
+    }
+    #staff > #vice-president{
+        grid-template-columns: 1fr;
+    }
+    /* #staff > #vice-president>:nth-child(3){
+        display: inherit;
+    } */
+    #nav {
+        font-size: 14px;
+    }
+    #activity-case {
+        margin: 0;
+    }
+}
+
+/* A propos */
+
+#about{
+    border-top: #5d1924 3px solid;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 30px;
+    text-align: center;
+    border-color: #c3896f;
+    border: 2 em;
+    height: max-content;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.image {
+    flex: 1;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}
+
+.image > img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media(max-width:1000px) {
+    .flex {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:692px) {
+    .flex {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+h4 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
